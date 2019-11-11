@@ -1,6 +1,9 @@
+var dayCount = 0;
+
 function takeANumber(line, name) {
   var realLength = line.length + 1;
   line.push(name);
+  dayCount++;
   return "Welcome, " + name + ". You are number " + realLength + " in line.";
 }
 
