@@ -9,13 +9,13 @@ function takeANumber(line, name) {
 
 function dayGenerator(init) {
   let counter = init || 0;
-  let line = [];
-    function dayNumber(name) {
-      var realLength = line.length + 1;
-      line.push(name);
-      counter++;
-      return "Welcome, " + name + ". You are number " + realLength + " in line.";
-    }
+  function dayNumber(line, name) {
+    let realLength = line.length + 1;
+    counter++;
+    line.push(name);
+    return "Welcome, " + name + ". You are number " + realLength + " in line.";
+  }
+  
   return dayNumber;
 }
 
