@@ -7,6 +7,17 @@ function takeANumber(line, name) {
   return "Welcome, " + name + ". You are number " + realLength + " in line.";
 }
 
+function dayGenerator(init) {
+  let counter = init || 0;
+    function dayNumber(line, name) {
+      var realLength = line.length + 1;
+      line.push(name);
+      dayCount++;
+      return "Welcome, " + name + ". You are number " + realLength + " in line.";
+    }
+  return dayNumber;
+}
+
 function nowServing(line) {
   if (line.length < 1) {
     return "There is nobody waiting to be served!";
