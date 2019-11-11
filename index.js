@@ -12,7 +12,7 @@ function dayGenerator(init) {
     function dayNumber(line, name) {
       var realLength = line.length + 1;
       line.push(name);
-      dayCount++;
+      counter++;
       return "Welcome, " + name + ". You are number " + realLength + " in line.";
     }
   return dayNumber;
