@@ -10,7 +10,7 @@ function takeANumber(line, name) {
 function dayGenerator(init) {
   let counter = init || 0;
   let line = [];
-    function dayNumber(line, name) {
+    function dayNumber(name) {
       var realLength = line.length + 1;
       line.push(name);
       counter++;
